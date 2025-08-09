@@ -4,7 +4,6 @@ import { getMealById } from "../api";
 import { Preloader } from "../components/layout/Preloader";
 
 import {
-  Button,
   Container,
   Typography,
   Paper,

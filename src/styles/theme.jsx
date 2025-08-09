@@ -5,11 +5,22 @@ export const theme = createTheme({
   palette: {
     mode: "dark",
     primary: {
-      main: "#1976d2",
+      main: "#19d2b9ff",
+      light: "#4cffdf",
+      dark: "#00a085",
+    },
+    secondary: {
+      main: "#ff8a65", // Hot pink
     },
     background: {
-      default: "#121212",
-      paper: "#181818",
+      default: "#0f1419", // GitHub dark
+      paper: "#161b22",
+    },
+    success: {
+      main: "#4caf50", // Для позитивних дій
+    },
+    warning: {
+      main: "#ff9800", // Для попереджень
     },
   },
   shape: {

@@ -7,22 +7,15 @@ function Footer() {
   return (
     <Box
       sx={{
-        backgroundColor: (theme) =>
-          theme.palette.mode === "light"
-            ? theme.palette.grey[200]
-            : theme.palette.grey[800],
+        backgroundColor: (theme) => theme.palette.background.paper,
         p: 2.5,
       }}
       component='footer'
     >
       <Container maxWidth='sm'>
-        <Typography variant='body2' color='text.secondary' align='center'>
-          {"Copyright © "}
-          <Link color='inherit' href='https://mui.com/'>
-            Your Website
-          </Link>{" "}
+        <Typography variant='body2' color='secondary' align='center'>
+          {"Just a footer | "}
           {new Date().getFullYear()}
-          {"."}
         </Typography>
       </Container>
     </Box>
