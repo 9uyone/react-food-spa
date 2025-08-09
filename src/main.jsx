@@ -10,7 +10,7 @@ import { theme } from "./styles/theme.jsx";
 createRoot(document.getElementById("root")).render(
   <ThemeProvider theme={theme}>
     <CssBaseline />
-    <Router>
+    <Router basename='/react-food'>
       <App />
     </Router>
   </ThemeProvider>
