@@ -1,12 +1,57 @@
-# React + Vite
+# 🍽️ React Food SPA
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Modern single-page application for browsing food categories and recipes, built with React and Material-UI.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🔍 **Smart Search** - Real-time category filtering
+- 📱 **Responsive Design** - Works perfectly on all devices
+- 🎨 **Modern UI** - Beautiful dark theme with Material-UI
+- ⚡ **Fast Navigation** - React Router for smooth page transitions
+- 🍳 **Recipe Details** - Complete cooking instructions and ingredients
+- 📺 **Video Recipes** - Embedded YouTube cooking tutorials
 
-## Expanding the ESLint configuration
+## 🛠️ Built With
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React 19** - Modern React with hooks
+- **Material-UI (MUI)** - Professional UI components
+- **React Router** - Client-side routing
+- **TheMealDB API** - Recipe data source
+- **Vite** - Fast build tool and dev server
+
+## 🚀 Getting Started
+
+1. Clone the repository
+```bash
+git clone https://github.com/9uyone/react-food-spa.git
+cd react-food-spa
+```
+
+2. Install dependencies
+```bash
+npm install
+```
+
+3. Start the development server
+```bash
+npm run dev
+```
+
+4. Open [http://localhost:5173/react-food-spa/](http://localhost:5173/react-food-spa/) to view it in the browser
+
+##  API Integration
+
+This project uses [TheMealDB API](https://www.themealdb.com/api.php) for fetching food categories, meals, and detailed recipe information.
+
+## 🌟 Learning Highlights
+
+This project demonstrates:
+- Modern React patterns with functional components and hooks
+- Material-UI theming and customization
+- Client-side routing with React Router
+- API integration and data fetching
+- Responsive design principles
+
+## 👨‍💻 Author
+
+**9uyone** - [GitHub](https://github.com/9uyone)
