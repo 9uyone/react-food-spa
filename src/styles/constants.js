@@ -1,6 +1,6 @@
 export const CARD_STYLES = {
   base: {
-    maxWidth: 345,
+    width: '100%',
     display: 'flex',
     flexDirection: 'column',
     height: 350,
