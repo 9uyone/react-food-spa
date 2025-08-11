@@ -1,15 +1,27 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Box, TextField } from "@mui/material";
+import { useSearchParams } from "react-router-dom";
 
 export function Search({ callback = Function.prototype }) {
   const [value, setValue] = useState("");
+  const [searchParams, setSearchParams] = useSearchParams();
 
-  const handleKey = (e) => {
-    if (e.key === "Enter") handleSubmit();
+  useEffect(() => {
+    const search = searchParams.get("search");
+    if (search) {
+      setValue(search);
+      callback(search);
+    }
+  }, []);
+
+  const handleSearch = (str) => {
+    if (str) setSearchParams({ search: str });
+    else setSearchParams();
+    callback();
   };
 
-  const handleSubmit = (e) => {
-    callback(value);
+  const handleKey = (e) => {
+    if (e.key === "Enter") handleSearch(value);
   };
 
   return (
