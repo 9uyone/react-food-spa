@@ -14,7 +14,11 @@ export function MealItem({ idMeal: id, strMeal: meal, strMealThumb: thumb }) {
         sx={{
           height: 240,
         }}
-        image={thumb}
+        image={
+          thumb
+            ? thumb
+            : "https://placehold.jp/00a085/ffffff/320x240.jpg?text=No%20image"
+        }
         title={meal}
       />
       <CardContent sx={{ flexGrow: 1 }}>
