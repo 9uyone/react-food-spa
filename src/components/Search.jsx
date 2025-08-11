@@ -17,7 +17,7 @@ export function Search({ callback = Function.prototype }) {
   const handleSearch = (str) => {
     if (str) setSearchParams({ search: str });
     else setSearchParams();
-    callback();
+    callback(str);
   };
 
   const handleKey = (e) => {
